@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MKWeekView" customModule="MKCalender" customModuleProvider="target">
+            <connections>
+                <outlet property="fifthDay" destination="EUn-L1-Tos" id="BfJ-k8-b7R"/>
+                <outlet property="firstDay" destination="E4y-X1-X9u" id="5qy-Wm-yYR"/>
+                <outlet property="fourthDay" destination="4it-Uz-EzW" id="yjM-Yr-PCu"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="Biq-GK-OIG"/>
+                <outlet property="secondDay" destination="aPm-Rf-WFF" id="Nyu-Bq-BlX"/>
+                <outlet property="seventhDay" destination="Otk-8F-bEs" id="Ecl-nD-IrJ"/>
+                <outlet property="sixthDay" destination="0pp-iG-Xoo" id="cTf-R5-hNp"/>
+                <outlet property="thirdDay" destination="PEy-gV-Nhi" id="B3n-AA-BAS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oPr-gG-Rqw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4y-X1-X9u" customClass="MKDayView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="53.5" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPm-Rf-WFF" customClass="MKDayView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="53.5" y="0.0" width="53.5" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEy-gV-Nhi" customClass="MKDayView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="107" y="0.0" width="53.5" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4it-Uz-EzW" customClass="MKDayView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="160.5" y="0.0" width="54" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUn-L1-Tos" customClass="MKDayView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="214.5" y="0.0" width="53.5" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pp-iG-Xoo" customClass="MKDayView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="268" y="0.0" width="53.5" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otk-8F-bEs" customClass="MKDayView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="321.5" y="0.0" width="53.5" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oPr-gG-Rqw" secondAttribute="trailing" id="7P1-7s-Alc"/>
+                <constraint firstAttribute="bottom" secondItem="oPr-gG-Rqw" secondAttribute="bottom" id="9lI-9C-xN4"/>
+                <constraint firstItem="oPr-gG-Rqw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dfI-NU-t4c"/>
+                <constraint firstItem="oPr-gG-Rqw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="miv-1G-mCz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="36.5" y="82"/>
+        </view>
+    </objects>
+</document>

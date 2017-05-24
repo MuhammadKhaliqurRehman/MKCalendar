@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MKMonthView" customModule="MKCalender" customModuleProvider="target">
+            <connections>
+                <outlet property="fifthWeekView" destination="iRQ-la-vZ5" id="2tE-GO-IXm"/>
+                <outlet property="firstWeekView" destination="VIk-Fe-Oaz" id="g8u-Cb-PvS"/>
+                <outlet property="fourthWeekView" destination="6x5-ND-60Z" id="hy1-kX-6Au"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="muN-qJ-wfn"/>
+                <outlet property="secondWeekView" destination="L5V-Zq-CnF" id="Chm-D0-yor"/>
+                <outlet property="sixthWeekView" destination="Jxq-tR-Cq1" id="eaG-YQ-IJt"/>
+                <outlet property="thirdWeekView" destination="lHb-J7-hUJ" id="SlA-TB-CzT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fT0-v9-lmF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIk-Fe-Oaz" customClass="MKWeekView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5V-Zq-CnF" customClass="MKWeekView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="40" width="375" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHb-J7-hUJ" customClass="MKWeekView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="80" width="375" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6x5-ND-60Z" customClass="MKWeekView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="120" width="375" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRQ-la-vZ5" customClass="MKWeekView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="160" width="375" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jxq-tR-Cq1" customClass="MKWeekView" customModule="MKCalender" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="200" width="375" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fT0-v9-lmF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5o7-6p-iHS"/>
+                <constraint firstAttribute="bottom" secondItem="fT0-v9-lmF" secondAttribute="bottom" id="IQX-QG-qGo"/>
+                <constraint firstItem="fT0-v9-lmF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZDK-0K-lXj"/>
+                <constraint firstAttribute="trailing" secondItem="fT0-v9-lmF" secondAttribute="trailing" id="q0Z-p0-Lgq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52.5" y="49"/>
+        </view>
+    </objects>
+</document>
